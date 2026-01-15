@@ -23,6 +23,50 @@
 <!-- Styles -->
 <link rel="stylesheet" href="assets/css/main.css">
 
+<style>
+  /* Custom profile layout styles */
+  .profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .profile img {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  
+  .profile .address {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 1.2rem;
+  }
+  
+  .profile .address p {
+    display: block;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .profile .address h4 {
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 575px) {
+    .profile {
+      flex-direction: column;
+    }
+    
+    .profile img {
+      width: 100%;
+    }
+  }
+</style>
+
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
@@ -103,19 +147,20 @@
     
     <article> 
       
-      <div class="w3-container"> 
-        <div class="w3-card" style="width:35%"> 
-        <img src="assets/img/me.jpg" alt="Person" style="width:35%"> 
-        <div class="w3-container"> <h4><b>puhacheu@ualberta.ca</b></h4> 
-          <p>Assiniboia Hall 1-02D</p> <p>T6G 2E7</p> <p>Edmonton AB, Canada</p> 
+      <div class="profile"> 
+        <img src="assets/img/me.jpg" alt="Veranika Puhacheuskaya"> 
+        <div class="address">
+          <h4><b>puhacheu@ualberta.ca</b></h4> 
+          <p>Assiniboia Hall 1-02D</p>
+          <p>T6G 2E7</p>
+          <p>Edmonton AB, Canada</p> 
         </div> 
       </div> 
         
-        <br> 
-        
         <div class="clearfix"> 
-          <p>Welcome to my website! I am part of the <a href="https://ccp.artsrn.ualberta.ca/">Center for Comparative Psycholinguistics lab</a>. I defended my Ph.D. dissertation in Psycholinguistics in December 2024 (supervised by <a href="https://sites.ualberta.ca/~jarvikiv/">Dr. Juhani Järvikivi</a>). 
+          <p>Welcome to my website! I am part of the <a href="https://ccp.artsrn.ualberta.ca/">Center for Comparative Psycholinguistics lab</a>. I defended my Ph.D. dissertation in Psycholinguistics in December 2024 (supervised by <a href="https://sites.ualberta.ca/~jarvikiv/">Dr. Juhani Järvikivi</a>).</p>
           <p>My dissertation explored how explicit and implicit accent attitudes as well as other personality traits affect the comprehension of language characterized by interpretative uncertainty (e.g., figurative language). My current project examines whether these findings extend to particular population groups.</p>
+        </div>
     
  <!--     
       <div class="publications">
@@ -157,20 +202,17 @@ and <a href="https://orcid.org/0000-0002-6347-5877" target="_blank">Puhacheuskay
 </div>
 -->
     
-
- <p>   
     <div class="social">
       <div class="contact-icons">
         <a href="mailto:puhacheu@ualberta.ca"><i class="fas fa-envelope"></i></a>
-        </p>
-   </div>
+      </div>
     </div>   
     
   </article>
-
+</div>
+</div>
 
     <!-- Footer -->
-
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
@@ -196,6 +238,9 @@ and <a href="https://orcid.org/0000-0002-6347-5877" target="_blank">Puhacheuskay
 
 <!-- Load Common JS -->
 <script src="assets/js/common.js"></script>
+
+
+</html>
 
 
 </html>
