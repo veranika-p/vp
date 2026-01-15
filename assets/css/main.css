@@ -231,6 +231,11 @@ d-appendix a, d-appendix a.footnote-backlink { color: var(--global-distill-app-c
 
 d-appendix a:hover, d-appendix a.footnote-backlink:hover { color: var(--global-hover-color) !important; }
 
-.about-wrapper {display: flex; gap: 2rem; align-items: flex-start}
+.about-wrapper {display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
+
+.about-wrapper .profile {flex: 0 0 250px; }
+
+.about-wrapper .about-text {flex: 1; min-width: 200px; }
+}
 
 /*# sourceMappingURL=main.css.map */
