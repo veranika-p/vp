@@ -208,7 +208,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright 2026 Veranika Puhacheuskaya
@@ -228,28 +228,18 @@
     <!-- Load Common JS -->
     <script src="assets/js/common.js"></script>
 
-    <!-- Load Common JS -->
-    <script src="assets/js/common.js"></script>
-
     <script>
-    function fixNav() {
-    $('.navbar-nav .nav-item').removeClass('active');
-    $('.navbar-nav .nav-item:first-child').addClass('active');
-    }
-    $(document).ready(fixNav);
-    window.addEventListener('pageshow', function(event) {
-    if (event.persisted) {
-      fixNav();
-    }
-  });
-</script>
+      function fixNav() {
+        $('.navbar-nav .nav-item').removeClass('active');
+        $('.navbar-nav .nav-item:first-child').addClass('active');
+      }
+      $(document).ready(fixNav);
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+          fixNav();
+        }
+      });
+    </script>
 
   </body>
-</html>
-
-  </body>
-</html>
-
-  </body>
-
 </html>
