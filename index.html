@@ -90,12 +90,6 @@
         margin-right: 20px;
       }
 
-      /* Force correct nav highlighting on homepage */
-      .navbar-nav .nav-item:not(:first-child) .nav-link {
-      font-weight: normal !important;
-      color: var(--global-text-color) !important;
-      }
-      
     </style>
 
     <!-- jQuery -->
@@ -243,8 +237,12 @@
     $('.navbar-nav .nav-item:first-child').addClass('active');
     }
     $(document).ready(fixNav);
-    window.addEventListener('pageshow', fixNav);
-  </script>
+    window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      fixNav();
+    }
+  });
+</script>
 
   </body>
 </html>
