@@ -238,11 +238,13 @@
     <script src="assets/js/common.js"></script>
 
     <script>
-      $(document).ready(function() {
-        $('.navbar-nav .nav-item').removeClass('active');
-        $('.navbar-nav .nav-item:first-child').addClass('active');
-      });
-    </script>
+    function fixNav() {
+    $('.navbar-nav .nav-item').removeClass('active');
+    $('.navbar-nav .nav-item:first-child').addClass('active');
+    }
+    $(document).ready(fixNav);
+    window.addEventListener('pageshow', fixNav);
+  </script>
 
   </body>
 </html>
